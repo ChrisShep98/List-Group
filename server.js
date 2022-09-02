@@ -14,7 +14,7 @@ require('dotenv').config({path: './config/.env'})
 
 // Passport config
 require('./config/passport')(passport)
-
+// Connecting to DataBase
 connectDB()
 
 app.set('view engine', 'ejs')
