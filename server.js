@@ -37,7 +37,8 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.use(flash())
-  
+
+// Main Routes
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
  
