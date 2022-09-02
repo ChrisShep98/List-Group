@@ -41,7 +41,7 @@ app.use(flash())
 // Main Routes
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
- 
+//Port 
 app.listen(process.env.PORT, ()=>{
     console.log('Server is running, you better catch it!')
 })    
