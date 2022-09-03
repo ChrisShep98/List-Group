@@ -39,6 +39,8 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   - DB_STRING: `your database URI` 
  ---
  
+ # Added Features  
+  -working on front end 
+  -possibly displaying todos like post it notes
+
  Have fun testing and improving it! 😎
-
-
