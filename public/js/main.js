@@ -69,13 +69,13 @@ async function markIncomplete(){
 }
 
 // Password visability toggle
-const togglePassword = document.querySelector('.togglePassword')
-const password = document.querySelector('.password')
-
-togglePassword.addEventListener('click', function(){
-    console.log('test')
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password'
-    password.setAttribute('type', type)
-
-    togglePassword.classList.toggle('bi-eye')
+const password = document.querySelectorAll('.password')
+const togglePassword = document.querySelectorAll('.togglePassword').forEach(item =>{
+    item.addEventListener('click', function(){
+        password.forEach(item =>{
+            const type = item.getAttribute('type') === 'password' ? 'text' : 'password'
+            item.setAttribute('type', type)
+        })
+        item.classList.toggle('bi-eye')
+    })
 })
