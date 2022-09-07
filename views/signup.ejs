@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
 </head>
-<body>
+<body class="bg-gray-300">
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el => { %>
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
     <form action="/signup" method="POST">
-        <ul>
+        <ul class="bg-white w-48 my-3">
         <li><input type="text" name="userName" placeholder="User Name"></li>
         <li><input type="text" name="displayName" placeholder="Display Name"></li>
         <li><input type="email" name="email" placeholder="Email"></li>
         <li><input type="password" name="password" placeholder="Password" class="password"> <i class="bi bi-eye-slash togglePassword"></i></li>
         <li><input type="password" name="confirmPassword" placeholder="Confirm Password" class="password"> <i class="togglePassword"></i></li>
-        <li><input type="submit"></li>
+        <li><input type="submit" class="cursor-pointer"></li>
         </ul>
     </form>
+    <a href="/" class="border rounded bg-blue-500 p-3 my-6 cursor-pointer">Home</a>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

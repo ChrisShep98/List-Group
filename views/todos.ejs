@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Todos</h1>
+    <h1 class="text-3xl">Todos</h1>
     <ul>
     <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
+            <li class='space-y-6 post-it todoItem p-8 bg-yellow-200 w-56' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
+                <span class='del cursor-pointer'> Delete </span>
             </li>
     <% }) %>    
     </ul>
@@ -22,11 +25,10 @@
 
     <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <input type="submit">
+        <input type="submit" class="cursor-pointer">
     </form>
-
     <a href="/logout">Logout</a>
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>
