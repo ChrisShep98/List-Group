@@ -40,5 +40,5 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
  ---
  
  # Added Features  
-  -Password visability feature in login/signup page
-  -Added a "displayName" to mongoose schema. displayName will also show on the ToDo homepage.
+  - Password visability feature in login/signup page
+  - Added a "displayName" to mongoose schema. displayName will also show on the ToDo homepage.
