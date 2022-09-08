@@ -40,7 +40,5 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
  ---
  
  # Added Features  
-  -working on front end 
-  -possibly displaying todos like post it notes
-
- Have fun testing and improving it! 😎
+  -Password visability feature in login/signup page
+  -Added a "displayName" to mongoose schema. displayName will also show on the ToDo homepage.
